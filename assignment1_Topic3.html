@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form name="login" action="post">
+Guess Number:<input type="number" name="num"  placeholder="guess the number"></input>
+<input type="submit" value="SUBMIT" onclick="return loginvalidation()"></input>
+</form>
+<script language="javascript">
+function loginvalidation(){
+var i=document.login.num.value;
+if(i==i)
+{
+document.writeln("Good Work");
+}
+else
+{
+document.writeln("Not Matched");
+}
+}
+</script>
+</body>
+</html>

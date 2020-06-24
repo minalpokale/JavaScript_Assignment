@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+
+</style>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<center><h2>Corona Virus Information</h2></center>
+
+<div class="row">
+  <div class="column">
+    <img src="corna12.jpg" id="img1" alt="Snow" style="width:100%" onmouseover="onmouse();" onMouseOut="outmouse();">
+  </div>
+  <div class="column">
+    <img src="coronamap.jpg" id="img2" alt="Forest" style="width:100%" onMouseOver="onmouse1();" onMouseOut="outmouse1();">
+  </div>
+  <div class="column">
+    <img src="mask.jpg" id="img3" alt="Mountains" style="width:100%" onMouseOver="onmouse2();" onMouseOut="outmouse2();">
+  </div>
+</div>
+
+
+
+<script language="javascript">
+function onmouse()
+{
+document.getElementById("img1").src="corona123.jpg";
+}
+
+function outmouse()
+{
+document.getElementById("img1").src="corna12.jpg";
+
+}
+function onmouse1()
+{
+document.getElementById("img2").src="corona_death.jpg";
+
+}
+
+function outmouse1()
+{
+document.getElementById("img2").src="coronamap.jpg";
+}
+
+function onmouse2()
+{
+document.getElementById("img3").src="corona_mask.jpg";
+
+}
+function outmouse2()
+{
+document.getElementById("img3").src="mask.jpg";
+}
+</script>
+</body>
+</html>

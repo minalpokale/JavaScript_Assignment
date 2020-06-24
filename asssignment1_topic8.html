@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form name="login" action="">
+CD Name <input type="text" name="name1" value=""></input>
+<br>
+CD Publisher <input type="text" name="name2" value=""></input>
+<br>
+CD Price <input type="text" name="name3" value=""></input>
+<br>
+<input type="submit" value="CD Details" onclick="displayAllDetails();">
+
+</form>
+<script language="javascript">
+function displayAllDetails()
+{
+var a=document.login.name1.value;
+var b=document.login.name2.value;
+var c=document.login.name3.value;
+if(!isNaN(c))
+{
+var x=((c+10)/100);
+var y=((x*3)/100);
+var n= c-y;
+}
+else
+{
+alert("Enter a number");
+}
+document.writeln("<br>CD Name: "+a);
+document.writeln("<br>CD publisher: "+b);
+document.writeln("<br>CD final price: "+n);
+
+}
+
+</script>
+</body>
+</html>

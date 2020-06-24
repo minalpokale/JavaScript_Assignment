@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script language="javascript">
+function newList(array1, array2) {
+var result = [];
+for (var i=0;i<array1.length;++i){
+result.push(array1[i]);
+result.push(array2[i]);
+}
+document.writeln(result);
+return result;
+}
+console.log(newList(['a','b','c'],[1,2,3]));
+</script>
+</body>
+</html>

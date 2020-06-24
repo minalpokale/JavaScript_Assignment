@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var getLocation = function(href) {
+    var l = document.createElement("a");
+    l.href = href;
+    return l;
+};
+var l = getLocation("http://example.com/path");
+console.log(l.hostname)
+console.log(l.pathname)
+console.log(l.protocol)
+</script>
+</body>
+</html>
